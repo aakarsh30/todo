@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+.bd{
+    position: static;
+    
+    
+    
+}
+.app {
+    position: fixed;
+    bottom: 0;
+    right: 0;    
+    border-radius: .5cm;
+}
+
+.frm{
+    position: relative;
+    height: 5cm;
+}
+.err{
+    position: absolute;
+    left: 16.7cm;
+    margin: 0 auto;
+}
+.ad{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0, 0.8);
+    z-index: 5;
+}
+.tk{
+    position: relative;
+    top: 5cm;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    background-color: black;
+    border-radius: 5mm;
+}
+.desc{
+    position: relative;
+    left: .5cm;
+    top: .7cm;
+    color: white;
+    
+}
+.area{
+    position: relative;
+    left:0.5cm;
+    width: 14cm;
+    background-color: cornsilk;
+}
+.option{
+    position: relative;
+    top: .5cm;
+    left: .5cm;
+}
+.li{
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    border: 5px solid black;
+    width: auto;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 10%;
+    background-color:#333333;
+    
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    
+}
+.txt{
+    letter-spacing: 2px;
+    color:#DADADA;
+    font-weight: 7px;
+    font-size: large;
+    
+}
+.tls{
+    align-self: center;
+}
+@keyframes delete {
+    25% {left: 25%;}
+    50%{left: 50%;}
+    75%{left: 75%;}
+    100%{left:100%;}
+}
+.anime{
+    animation-name: delete;
+    animation-duration: 2s;
+}
