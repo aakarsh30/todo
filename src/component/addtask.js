@@ -45,11 +45,21 @@ function Task() {
                 </Box>
                 <Box direction="row" gap="small"  className="option">
                     <Button label="ADD" icon={<Add/>} reverse={true} onClick={()=>{
+                       if(value!=="")
+                       {
+
+                            tsk.push(value);
+                            setTsk(tsk);
+                            setValue("");
+                            setDpl(!Dpl);
+
+                       }
+                       else
+                       {
+                           alert("Task cannot be empty");
+                       } 
                         
-                        tsk.push(value);
-                        setTsk(tsk);
-                        setValue("");
-                        setDpl(!Dpl);
+                        
                     }} primary></Button>
                     <Button label="Cancel" onClick={() => {setDpl(!Dpl); setValue("");}}  primary></Button>
                 </Box>
